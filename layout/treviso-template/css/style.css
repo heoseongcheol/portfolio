@@ -192,6 +192,11 @@ section {
 .mz-about-container {
     padding: 0px 50px;
 }
+.mz-about-container p{
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 2.5;
+}
 
 .mz-module-about {
 	padding: 20px;
@@ -206,7 +211,7 @@ section {
 }
 
 .mz-module-about h3 {
-font-weight: 700;
+    font-weight: 700;
     font-size: 13px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -359,7 +364,7 @@ figure.effect-bubba figcaption::after {
 
 figure.effect-bubba h2 {
     color: #fff;
-    font-size: 15px;
+    font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
 	padding-top: 30%;
