@@ -270,15 +270,15 @@
 </footer>
 
 <script>
-    $(".h_btn").click(function () {
-    if ($(this).hasClass("active")) {
-      $('m_menu').stop().fadeOut(300);
-      $(this).removeClass();
-    } else {
-      $(this).addClass("active");
-      $('.m_menu').stop().fadeIn(300);
-    }
-  });
+    $(function(){
+        $('.h_btn').click(function(){
+            if($('.m_menu').css("display") == "none"){
+                $('.m_menu').fadeIn(300);
+            }else if($('.m_menu').css("display") =="block"){
+                $('.m_menu').fadeOut(300);
+            }
+        });
+    });
 </script>
 
 </body>
