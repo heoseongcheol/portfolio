@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>singlemalt</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+<header>
+    <div class="util">
+        <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a><img src="./images/search.png" alt="search" id="search"></a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <article>
+            <img src="./images/close.png" alt="close" id="close">
+        </article>
+        <div>
+            <input type="text" placeholder="          검색어를 입력 하세요.">
+            <img src="./images/search.png" alt="search">
+        </div>
+    </div>
+    <div class="gnb">
+        <ul class="main_menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">COCKTAILS</a></li>
+            <li>
+                <a href="#">KNOWLEDGE</a>
+                <ul class="sub_menu">
+                    <li><a href="sub.html">SINGLE MALT</a></li>
+                    <li><a href="#">HISTORY</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">SHOP</a>
+                <ul class="sub_menu">
+                    <li><a href="#">WHISKY</a></li>
+                    <li><a href="#">GLASSES</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">PROMOTION</a>
+                <ul class="sub_menu">
+                    <li><a href="#">EXPERT BLOG</a></li>
+                    <li><a href="#">MALT MARSTER</a></li>
+                    <li><a href="#">RECENT NEWS</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html"><img src="./images/logo.png" alt="logo"></a></li>
+        </ul>
+    </div>
+</header>
+<section id="banner" class="b_wrap">
+    <div class="bnr">
+        <div class="slide">
+            <a href="#"  class="top_img"><img src="./images/visual_bn01.jpg" alt="visual_bn01"></a>
+            <a href="#"><img src="./images/visual_bn02.jpg" alt="visual_bn02"></a>
+            <a href="#"><img src="./images/visual_bn03.jpg" alt="visual_bn03"></a>
+        </div>
+        <button class="l_btn" onclick="prevFunc()"><img src="./images/l_btn.png" alt="l_btn"></button>
+        <button class="r_btn" onclick="nextFunc()"><img src="./images/r_btn.png" alt="r_btn"></button>
+        <div class="carousel">
+            <a data-i="0"><img src="./images/ca_bar.png" alt="01"/></a>
+            <a data-i="1"><img src="./images/ca_bar.png" alt="01"/></a>
+            <a data-i="2"><img src="./images/ca_bar.png" alt="01"/></a>
+
+        </div>
+    </div>
+</section>
+<div class="b_wrap">
+<section id="product">
+    <div class="premium">
+        <figure>
+            <a><img src="./images/premium_bn01.jpg" alt="premium_bn01"></a>
+            <figcaption>
+                <a href="#">
+                    <p>Glenfiddich 50Y 70CL</p>
+                    <p>￡ 24,000.00</p>
+                </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <a><img src="./images/premium_bn02.jpg" alt="premium_bn02"></a>
+            <figcaption>
+                <a href="#">
+                    <p>Glenfiddich 50Y 70CL</p>
+                    <p>￡ 24,000.00</p>
+                </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <a><img src="./images/premium_bn03.jpg" alt="premium_bn03"></a>
+            <figcaption>
+                <a href="#">
+                    <p>Glenfiddich 50Y 70CL</p>
+                    <p>￡ 24,000.00</p>
+                </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <a><img src="./images/premium_bn04.jpg" alt="premium_bn04"></a>
+            <figcaption>
+                <a href="#">
+                    <p>Glenfiddich 50Y 70CL</p>
+                    <p>￡ 24,000.00</p>
+                </a>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="pro">
+        <ul>
+            <a>
+                <li>MACALLAN</li>
+                <li><img src="./images/macallan.jpg" alt="MACALLAN"></li>
+            </a>
+        </ul>
+        <div>
+            <ul>
+                <li><a href="#"><img src="./images/product_01.jpg" alt="THE MACALLAN RUBY"></a></li>
+                <li><a href="#">THE MACALLAN RUBY 70CL</a></li>
+                <li><a href="#">￡ 225.00</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_01.jpg" alt="THE MACALLAN RUBY"></a></li>
+                <li><a href="#">THE MACALLAN RUBY 70CL</a></li>
+                <li><a href="#">￡ 225.00</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_01.jpg" alt="THE MACALLAN RUBY"></a></li>
+                <li><a href="#">THE MACALLAN RUBY 70CL</a></li>
+                <li><a href="#">￡ 225.00</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_01.jpg" alt="THE MACALLAN RUBY"></a></li>
+                <li><a href="#">THE MACALLAN RUBY 70CL</a></li>
+                <li><a href="#">￡ 225.00</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_01.jpg" alt="THE MACALLAN RUBY"></a></li>
+                <li><a href="#">THE MACALLAN RUBY 70CL</a></li>
+                <li><a href="#">￡ 225.00</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_01.jpg" alt="THE MACALLAN RUBY"></a></li>
+                <li><a href="#">THE MACALLAN RUBY 70CL</a></li>
+                <li><a href="#">￡ 225.00</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="pro">
+        <ul>
+            <a>
+                <li>GLENMORANGIE</li>
+                <li><img src="./images/glenmorangie.jpg" alt="GLENMORANGIE"></li>
+            </a>
+        </ul>
+        <div>
+            <ul>
+                <li><a href="#"><img src="./images/product_02.jpg" alt="GLENMORANGIE SIGNET"></a></li>
+                <li><a href="#">GLENMORANGIE SIGNET</a></li>
+                <li><a href="#">￡ 153.58</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_02.jpg" alt="GLENMORANGIE SIGNET"></a></li>
+                <li><a href="#">GLENMORANGIE SIGNET</a></li>
+                <li><a href="#">￡ 153.58</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_02.jpg" alt="GLENMORANGIE SIGNET"></a></li>
+                <li><a href="#">GLENMORANGIE SIGNET</a></li>
+                <li><a href="#">￡ 153.58</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_02.jpg" alt="GLENMORANGIE SIGNET"></a></li>
+                <li><a href="#">GLENMORANGIE SIGNET</a></li>
+                <li><a href="#">￡ 153.58</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_02.jpg" alt="GLENMORANGIE SIGNET"></a></li>
+                <li><a href="#">GLENMORANGIE SIGNET</a></li>
+                <li><a href="#">￡ 153.58</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="./images/product_02.jpg" alt="GLENMORANGIE SIGNET"></a></li>
+                <li><a href="#">GLENMORANGIE SIGNET</a></li>
+                <li><a href="#">￡ 153.58</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div class="line"></div>
+</div>
+<footer>
+    <div class="f_wrap">
+        <ul>
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">THE STORY</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">PRIVACY&COOKIE POLICY</a></li>
+            <li><a href="#">TERMS&CONDITIONS</a></li>
+            <li><a href="#">SHOPPING</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">FOLLOW US</a></li>
+            <li><a href="#"><img src="./images/sns_f.png" alt="sns_f">facebook</a></li>
+            <li><a href="#"><img src="./images/sns_t.png" alt="sns_t">twitter</a></li>
+            <li><a href="#"><img src="./images/sns_i.png" alt="sns_i">instagram</a></li>
+            <li><a href="#"><img src="./images/sns_y.png" alt="sns_y">youtube</a></li>
+        </ul>
+        <p>Copyright&copy; 2020 SMW. all right reserved.</p>
+    </div>
+</footer>
+<script src="./js/index.js"></script>
+</body>
+</html>

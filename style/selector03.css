@@ -1,0 +1,46 @@
+@charset "utf-8";
+h1{background-color:red;}
+/*현재 문서 내에있는 모든 h1 선택*/
+
+#wrap h1{/*아이디 #wrap 안에 있는 모든 h1 선택*/
+		background-color:yellow;
+}
+#wrap>h1{/*아이디 #wrap의 자식 요소 인 h1 선택*/
+	border:2px solid green;
+}
+
+/*
+ 서브★ 텍스트를 가지고 있는 요소들을 선택하는 선택자를 3개 이상 작성 해보시오.
+*/
+
+.submenu li{background-color:cyan;}
+#list>li>ul>li{border:5px solid red;}
+.submenu>li{box-shadow:5px 5px 5px black;}
+
+/*세번째 해딩태그 텍스트를 가지고 있는 요소에*/
+
+.title2>h1{font-size:16px;}
+#wrap>div.title2>h1{text-shadow:5px 5px 5px red;}
+*[class^="tit"]{box-shadow:5px 5px 5px black;}
+
+#list li{/*아이디가 list인 요소안에 있는 모든 li태그 선택*/
+	text-decoration:overline red;
+}
+
+/*
+※ 스타일 적용의 우선순위 ※
+!important >>> 인라인 >>> 내부 >>> 외부
+
+  내부와 외부 스타일 시트의 경우
+   ▶아래에 기술 할 수록 우선순위가 더 높다.
+
+※ 선택자의 우선순위 ※
+아이디선택자>자식선택자>클래스,속성,가상선택자>태그>전체선택자
+
+ * 좀 더 정확한 선택자 *
+  - #아이디명>h2  vs  태그명#아이디명>h2
+  
+			후자가 태그명이 붙었서 더 정확하게 했기 때문에 우선순위가 좀 더 높다.
+*/
+
+ul>li{border:5px solid blue !important;}

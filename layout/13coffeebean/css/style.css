@@ -1,0 +1,235 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{text-decoration: none; color: #333;}
+img{vertical-align: top;}
+body{width: 100%;}
+
+/* 헤더영역 */
+
+.util{
+    width: 100%;
+    height: 50px; 
+    background: #ddd;
+}
+.util>ul{
+    width: 1440px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+}
+.util>ul>li{margin:17px; font-size: 14px;}
+.util>ul>li:last-child{margin: 0;}
+
+.gnb{
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px 0;
+}
+#logo{
+    width: 5%; height: 70px;
+}
+#logo>a{
+    display: block;
+    width: 70px; height: 70px;
+    background: url('../img/logo.png') no-repeat;
+    text-indent: -999px;
+}
+.gnb>ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+}
+.gnb>ul>li>{
+    width: 15%;
+}
+.gnb>ul>li>a{
+    padding: 10px 5px;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: bold;
+}
+.gnb>ul>li>a:hover{
+    color: #fea500;
+}
+.gnb>ul>li>a::after{
+    content: '';
+    width: 0; height: 2px;
+    background: #fea500;
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s;
+}
+.gnb>ul>li>a:hover::after{width: 100%;}
+
+
+/* 배너영역 */
+
+#banner{width: 100%; margin-bottom: 100px;}
+#banner>a{
+    display: block;
+    width: 100%;
+}
+#banner>a>img{
+    width: 100%;
+}
+
+/* md_pick */
+
+.wrap{
+    width: 1240px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+#md_pick, #new{width: 100%; margin-bottom: 100px;}
+#md_pick>h3, #new>h3{
+    font-size: 24px; 
+    margin-bottom: 60px;
+    color: gold;
+}
+#md_pick>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#md_pick>div>ul>li:nth-child(1)>a{
+    display: block;
+    width: 300px; height: 300px;
+    overflow: hidden;
+}
+#md_pick>div>ul>li:nth-child(1)>a>img{
+    width: 100%; height: 100%;
+}
+#md_pick>div>ul>li:nth-child(1)>a>img:hover{
+
+    transform: scale(1.1);
+    transition: all .3s;
+}
+#md_pick>div>ul>li:nth-child(2)>a{
+    font-size: 18px;
+    font-weight: bold;
+}
+#md_pick>div>ul>li:nth-child(2){margin: 20px 0;}
+#md_pick>div>ul>li:nth-child(3)>a{color: #fea500;}
+
+/* new */
+
+#new>div{
+    display: flex;
+    justify-content: space-between;
+}
+#new>div>ul>li:first-child>a{
+    display: block;
+    width: 380px; height: 470px;
+    overflow: hidden;
+}
+#new>div>ul>li:first-child>a>img{
+    width: 100%; height: 100%;
+}
+#new>div>ul>li:first-child>a>img:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+}
+#new>div>ul>li:last-child{margin: 20px 0;}
+#new>div>ul>li:last-child>a{color: #fea500;}
+
+
+/* instagram */
+
+#instagram{
+    background: purple;
+    padding: 60px 0px;
+    text-align: center;
+}
+#instagram>h3{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+#instagram>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 1440px;
+    margin: 0 auto 20px;
+}
+#instagram>ul>li>a{
+    display: block;
+    width: 240px; height: 240px;
+    overflow: hidden;
+}
+#instagram>ul>li>a>img{
+    width: 100%; height: 100%;
+
+}
+#instagram>ul>li>a>img:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+
+}
+#instagram>h4{
+    display: inline-block;
+    width: 440px;
+    background: #fea500;
+    color: #fff;
+    padding: 15px 0;
+}
+
+/* 푸터영역 */
+footer{width: 100%; background: #ddd}
+.footerMenu{
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+.f_menu{
+    width: 240px; 
+    padding: 40px 0;
+    border-bottom: 1px solid #666;
+}
+.f_menu>li>a{
+    font-size: 18px; 
+    color: #fea500;
+}
+.f_submenu>li{
+    line-height: 2;
+    font-size: 14px;
+}
+.f_submenu>li:first-child{margin-top: 10px;}
+.footerMenu>ul:nth-of-type(5)>li>ul>li:nth-child(4)>a{font-weight: bold; font-size: 15px;}
+
+.copy{
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy>div>ul{display: flex; margin-bottom: 30px;}
+.copy>div>ul>li>a{font-size: 14px;}
+.copy>div>ul>li:nth-of-type(even){margin: 0 10px;}
+.copy>div>ul>li:nth-of-type(3)>a{color: #fea500;}
+.copy>div>address{
+    font-size: 14px;
+    line-height: 1.8; 
+    margin-bottom: 30px;
+}
+.copy>ul{display: flex;}
+.copy>ul>li{margin: 0 10px;}
+
+
+
+
+
+

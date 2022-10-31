@@ -1,0 +1,18 @@
+.list{
+    width: 100px;
+    height: 200px;
+    p{
+        color: red;
+        background: yellow;
+        >span{
+            color: aqua;
+            >a{
+                background: red;
+                &:hover{
+                    display: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

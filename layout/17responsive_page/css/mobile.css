@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+
+
+
+@media all and (max-width:1024px) {
+	.wrap{
+        width:100%;
+        position:relative;
+    }
+    .header{
+        width: 100%;
+        position:fixed;
+        background:#fff;
+        top:0;
+        z-index:999;
+        border-bottom:2px solid #fff;
+    }
+    .header>nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        height:60px;
+    }
+    .backimg{margin-top:60px;}
+    #util{margin-right: 10px;}
+    #util>li:last-child{display:none;}
+    #menu{
+        display:block;
+        width:40px;
+        margin-left:10px;
+    }
+    #menu>span{
+        width: 100%;
+        height: 4px;
+        background: #000;
+        display: block;
+    }    
+    #menu>span:nth-child(2){margin: 7px 0;}
+    .aniMenu{
+        position: relative;
+        width: 100%;
+        z-index: 99;
+    }
+    .aniMenu::before{
+        content: '';
+        display: block;
+        background: #000;
+        width: 40px; height: 4px;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 12px;
+    }
+    .aniMenu::after{
+        content: '';
+        display: block;
+        background: #000;
+        width: 40px; height: 4px;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 12px;
+    }
+
+    #menu.aniMenu>span{
+        background: transparent;
+        transition: all .3s;
+    }
+
+
+    #logo>a{
+        display: block;
+        width: 180px; height: 35px;
+        background: url(../images/logo.png) no-repeat;
+    }
+    #logo>a>img{
+        width: 100%; height: 100%;
+    }
+    #gnb{
+        display: none;
+        position: absolute;
+        top: 63px;
+        width: 100%;
+        background: rgb(203, 178, 154);
+    }
+
+    #gnb>li>a, .sub>li>a{
+        display: block;
+        width: 100%;
+        padding: 10px 0 10px 30px;
+        color: #000;
+        border-bottom: 1px solid aliceblue;
+        transition: all .3s;
+    }
+    .sub>li>a{padding-left: 50px;}
+    .sub>li>a::before{content: '- ';}
+    .sub{display: none;}
+
+    #gnb>li>a:hover,
+    .sub>li>a:hover{
+        background: rgba(0,0,0,0.9);
+        font-weight: bold;
+    }
+    .headerWrap, .backimg{
+        height: 360px
+        !important;
+    }
+
+    /*Mver 제품영역 스타일*/
+    #bestProduct{height: 800px; margin-bottom: 80px;}
+
+    /*Mver sns영역 스타일*/
+    #snsArea>div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    #snsArea>div>ul{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    #snsArea>div>ul>li{
+        width: 26%; text-align: center;
+    }
+    #snsArea>div>ul>li img{width: 100px; height: 100px;}
+    #snsArea>div>ul>li h3{margin: 10px 0;}
+    #snsArea .desc{
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-align: center !important;
+    }
+    #snsArea .desc p:last-child{
+        margin: 20px auto;
+    }
+
+    /*Mver mdPick 스타일*/
+    #mdPick>h2{margin-bottom: 40px;}
+    #mdPick>div>ul>li:last-child{display: none;}
+    
+    #mdPick>div>ul{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+    #mdPick>div>ul>li{
+        width: 46%;
+        text-align: center;
+    }
+
+
+    /* line banner */
+    #lineBanner>div:first-child{
+        width: 100% !important;
+    }
+    #lineBanner>div:last-child{margin-bottom: 100px;}
+
+    /*Mver 둥근 이미지 영역*/
+    #picCircle{justify-content: space-around;}
+    #picCircle>div{width: 100%; height: 420px;}
+    
+    #picCircle>div.circleWrap:nth-of-type(1)>a>.circle_img{
+        width: 240px; height: 240px;
+        top: 25%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    #picCircle>div.circleWrap:nth-of-type(1) ~ div{display: none;}
+    #picCircle>div.circleWrap:nth-of-type(1){
+        width: 90%;
+        margin: 50px auto;
+        padding-top: 50px;
+    }
+    #picCircle>div>a>div.circle_txt{
+        width: 60% !important; height: 400px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 !important;
+        position: relative;
+    }
+    #picCircle>div>a>div.circle_txt>h4{
+        width: 100%;
+        position: absolute;
+        bottom: 110px; left: 50%;
+        transform: translateX(-50%);
+    }
+    #picCircle>div>a>div.circle_txt>p{
+        width: 100%;
+        position: absolute;
+        left: 50%; bottom: 40px;
+        transform: translateX(-50%);
+    }
+
+    /*Mver 이미지 배너 영역*/
+    #imgBanner{
+        background-size: 60%, 80%;
+        height: 450px !important;
+        background-position: 10% top, 70% 20%;
+        padding: 60px 0;
+    }
+
+    #imgBanner>div:nth-child(1){
+        background: rgba(0,0,0,0.6);
+        color: #fff;
+        width: 400px; height: 200px !important;
+        box-shadow: 2px 2px 10px red;
+        position: absolute;
+        left: 50%; top: 40% !important;
+        transform: translateX(-50%);
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 99;
+    }
+    #imgBanner>div:nth-child(1)>p:last-child{display: none;}
+    #imgBanner>div:nth-child(2){
+        position: absolute;
+        top: 0 !important; left: 15% !important;
+    }
+    #imgBanner>div:nth-child(3){
+        position: absolute;
+        top: 8% !important; right: 15% !important;
+    }
+    #imgBanner>div:nth-child(2)>img{
+        width: 300px;
+    }
+    #imgBanner>div:nth-child(3)>img{
+        width: 240px;
+    }
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,327 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import "layout.css";
+
+a,a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color: #333;
+}
+/*
+#822439
+#5e3b47
+#a95772
+#a7974b
+#d9b97e
+#d4cda6
+#d3cfc2
+#e2e2e2
+*/
+
+
+#container h3{
+    color: #000;
+    font-size: 1.5rem;
+    margin:10px 20px;
+    font-weight: 800;
+}
+.clear{
+    margin: 10px 15px;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+}
+.clear>ul{width: 130px;}
+
+#contents>div{background: #fff;}
+#contents>div:nth-of-type(1){
+    border: 2px solid #822439; 
+    box-sizing: border-box;
+}
+#contents>div:nth-of-type(2){
+    border: 2px solid #5e3b47; 
+    box-sizing: border-box;
+}
+#contents>div:nth-of-type(3){
+    border: 2px solid #a95772; 
+    box-sizing: border-box;
+}
+#contents>div:nth-of-type(4)>div{
+    border: 2px solid #a7974b; 
+    box-sizing: border-box;
+}
+#contents>div:nth-of-type(5){
+    border: 2px solid #d9b97e; 
+    box-sizing: border-box;
+}
+#contents>div:nth-of-type(6)>div{
+    border: 2px solid #d4cda6; 
+    box-sizing: border-box;
+}
+#contents>div:nth-of-type(7)>div{
+    border: 2px solid #d3cfc2; 
+    box-sizing: border-box;
+}
+
+.line1{
+	width: 90%; height: 2px;
+	background: #5e3b47;
+	border: 0;
+}
+.line2{
+	width: 90%; height: 2px;
+	background: #a95772;
+	border: 0;
+}
+.line3{
+	width: 90%; height: 2px;
+	background: #a7974b;
+	border: 0;
+}
+.line4{
+	width: 90%; height: 2px;
+	background: #d9b97e;
+	border: 0;
+}
+.line5{
+	width: 90%; height: 2px;
+	background: #d4cda6;
+	border: 0;
+}
+.line6{
+	width: 90%; height: 2px;
+	background: #d3cfc2;
+	border: 0;
+}
+
+/*헤더영역*/
+#logo{width: 331px; height: 85px; margin-top:15px;}
+#logo>a{
+    display: block;
+    width: 100%; height: 100%;
+    background: url('../images/logo.jpg') no-repeat;
+    text-indent: -9999px;
+}
+#utilwrap>ul{height: 60px; font-size: 0.8rem;}
+#gnb{font-weight: 800;}
+#gnb>ul>li:hover{font-size: 1.2rem;}
+
+/*배너영역*/
+.banner{
+    border: 2px solid #822439;
+}
+.banner>figure{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 27px;
+    position: relative;
+}
+.banner>figure a{position: absolute;}
+.banner>figure figcaption{
+    position: absolute;
+    top: 350px; right:60px;
+    text-align: right;
+}
+.banner>figure figcaption>h2{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    opacity: .8;
+}
+.l_line{
+    width: 450px; height: 5px;
+    border: 0;
+    background: #fff;
+    opacity: .6;
+}
+
+/*이벤트*/
+.event{margin: 10px 20px 20px;}
+.event figcaption{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px auto;
+    color: #333;
+}
+.event p{line-height: 18px; color: #666;}
+
+/*이용안내*/
+.info div{
+    margin: 20px;
+    text-align: center;
+    line-height: 2;
+}
+.info div h4{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #a95772;
+}
+.info div p{font-size: 1.2rem; font-weight: bold;}
+.info>div:nth-of-type(1)>p>span{font-size: 1rem;}
+.info>div:nth-of-type(2)>p>span{font-size: 1.5rem; color: red;}
+
+/*이달의 작가*/
+.writer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.writer a{ width: 125px;}
+.writer>ul{width: 125px;}
+.writer>ul>li:first-child{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+.writer>ul>li:last-child{line-height: 1.3; color: #666;}
+
+/*소문예지*/
+.literary{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.literary figure{width: 125px;}
+.literary img{width: 100%;}
+.literary figcaption{
+    color: #333;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*전자북*/
+.book{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 15px;
+}
+.book figure{width: 110px; text-align: center;}
+.book figcaption{margin: 10px auto; color: #666;}
+
+/*소장자료*/
+.intestine div{
+    width: 90%; height: 208px;
+    margin:10px auto 26px;
+    position: relative;
+}
+
+.intestine div>a{position: absolute;}
+.intestine div>ul{
+    position: absolute;
+    right: 35px; top: 50px;
+    line-height: 2;
+    text-align: center;
+}
+.intestine div>ul>li:first-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+.intestine div>ul>li:last-child{color:#666;}
+
+/*기증품*/
+.done{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.done>a{width:125px;}
+.done>a img{width: 100%;}
+.done>ul{width: 125px; line-height: 1.3;}
+.done>ul>li:first-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.done>ul>li:last-child{color: #666;}
+
+/*문학이야기*/
+.story{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.story>a{width:125px;}
+.story>a img{width: 100%;}
+.story>ul{width: 125px; line-height: 1.3;}
+.story>ul>li:first-child{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+.story>ul>li:last-child{color: #666;}
+
+/*공지사항*/
+.notice{margin: 0 15px;}
+.notice>li{
+    display:block;
+	width:100%;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+    margin-bottom: 10px;
+}
+.notice>li a{color: #666;}
+
+/*오시는길*/
+.map{margin: 20px 20px 30px; text-align: center;}
+.map figcaption{
+    line-height: 1.5; 
+    margin: 10px auto;
+    font-weight: bold;
+    color: #333;
+}
+
+/*제휴사이트*/
+.alliance{
+    width: 100%; height: 80%;
+}
+.alliance>a{
+    width: 100%; height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*푸터영역*/
+footer{
+    height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background: #e2e2e2;
+}
+footer>div:first-child{
+    width: 55%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer>div:first-child>img{margin-left: 20px;}
+footer>div:last-child{
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+footer>div:first-child>address{
+    line-height: 1.5; 
+    color: #333;
+    font-size: 0.9rem;
+    margin-right: 20px;
+}
+
+

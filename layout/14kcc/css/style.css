@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+*{margin: 0; padding: 0; list-style: none;}
+img{vertical-align: top;}
+a,a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color: #333;
+}
+
+.wrap{width: 1100px; margin: 0 auto;}
+.wrap>h2{
+    display:none;
+    visibility:hidden;
+    width:0; height:0;
+    overflow:hidden;
+    text-indent:-9999px; 
+}
+
+/*헤더영역*/
+header{text-align: center;}
+#logo{
+    width: 86px; 
+    height: 49px;
+    margin: 20px auto;
+}
+#logo>a{
+    display: block;
+    width: 100%; height: 100%;
+    background: url(../images/logo.png) no-repeat;
+}
+#gnb{width: 100%; height: auto;}
+.menu>li{
+    float: left;
+    width: 220px; height: 50px;
+    background: #1c4199;
+    position: relative;
+}
+.menu>li:hover{
+    background: #37466c;
+}
+.menu::after, .greetings>div>ul::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+.menu>li>a{
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.5;
+    color: #f1f1f1;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    background: #37466c;
+    z-index: 99;
+}
+.submenu>li{
+    width: 220px; height: 50px;
+}
+.submenu>li:hover{
+    background: #2c719d;
+}
+.submenu>li>a{
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 3;
+    color: #f1f1f1;
+}
+
+/*인사말*/
+.greetings{
+    width: 1100px; height: 350px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border: 1px solid #999;
+    border-top: 0;
+    box-sizing: border-box;
+}
+.greetings>nav{
+    width: 197px;
+    border-right: 1px solid #999;
+    text-align: center;
+}
+.greetings>nav>h2{
+    width: 100%; height: 60px;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 60px;
+    background: #333;
+    color: #f1f1f1;
+}
+.greetings>nav>ul>li{
+    width: 100%; height: 50px;
+    font-size: 0.9em;
+    line-height: 50px;
+    border-bottom:1px solid #999;
+}
+
+.greetings>div{
+    width: 860px;
+    padding: 20px;
+}
+.greetings>div>p:nth-child(1){
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #1c4199;
+}
+.greetings>div>p:nth-child(2){
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+.greetings>div>p:nth-child(3){
+    font-size: 1.2em;
+    text-align: right;
+}
+.greetings>div>ul{
+    margin: 10px 0;
+}
+.greetings>div>ul>li{
+    width: 120px;
+    float: left;
+    font-weight: bold;
+}
+
+/*푸터영역*/
+footer>div{
+    height: 100px;
+    background: #ddd;
+    border: 1px solid #999;
+    border-top: 0;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+}
+footer>div>address{
+    color: #666;
+    font-weight: bold;
+}
+footer>div>p{
+    font-size: 0.9em;
+    color: #666;
+}
+footer>div>p>span{
+    font-style: italic;
+}
+

@@ -1,0 +1,310 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import "pc.css";
+@import "mobile.css";
+/*공통사용*/
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{color:#333;}
+
+.container{
+    width:100%;
+    margin:0 auto; /*가로 중앙정렬로 바꿀 수도 있잖아요..?*/
+    overflow:hidden;
+}
+
+/*비주얼 슬라이드 관련 CSS*/
+.backimg{
+     width:100%;
+     height:650px;
+     position:relative;
+}
+.backimg>li{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:url() no-repeat center center/cover;
+    transition:all .4s;
+    opacity:0;
+}
+.backimg>li:nth-child(1){background-image:url('../images/banner1.jpg');}
+.backimg>li:nth-child(2){background-image:url('../images/banner4.jpg');}
+.backimg>li:nth-child(3){background-image:url('../images/banner3.jpg');}
+.backimg>li.topImg{
+    opacity:1;
+    z-index:3 !important;
+    transition:all .4s;
+}
+/*헤더 공통영역*/
+.headerWrap{position:relative;}
+
+/*베스트 상품 공통영역*/
+#bestProduct>h2{
+    display:none;
+    visibility:hidden;
+    width:0; height:0;
+    overflow:hidden;
+    text-indent:-9999px; 
+}
+#bestProduct>ul{height: 200px;}
+#bestProduct>ul>li{
+    width: 100%; height: 100%;
+    position: relative;
+    background: url() no-repeat  97% center/120px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#bestProduct>ul>li:nth-child(1){
+    background-image: url('../images/book_ga.jpg');
+}
+#bestProduct>ul>li:nth-child(2){
+    background-image: url('../images/book_namiya.jpg');
+}
+#bestProduct>ul>li:nth-child(3){
+    background-image: url('../images/book_X.jpg');
+}
+#bestProduct>ul>li:nth-child(4){
+    background-image: url('../images/book_bang.jpg');
+}
+#bestProduct>ul>li>a{
+    position: absolute;
+    width: 60%;
+    display: block;
+    top: 0px; padding: 10px 20px;
+}
+#bestProduct>ul>li>a h3{
+    font-size: 1.6rem; 
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+#bestProduct>ul>li>a p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/*sns 영역 공통 스타일*/
+
+#snsArea>div>ul>li p{
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+#snsArea>div>ul>li h3{font-weight: bold;}
+#snsArea .desc{
+    text-align: left;
+    margin-top: 60px;
+}
+#snsArea .desc h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+#snsArea .desc p{
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 2;
+    margin: 10px 0;
+}
+#snsArea .desc p:last-child{
+    background: #333;
+    color: #fff;
+    width: 160px;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#snsArea>div>ul>li h3{color: #333;}
+#snsArea>div>ul>li p{color: #333;}
+/*#snsArea .desc p:last-child:hover{
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    box-sizing: border-box;
+}*/
+
+/*타이틀 스타일 공통*/
+h2.title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: #333;
+}
+h2.title + h3{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+/*MD픽 영역 스타일*/
+#lineBanner{
+    width: 100%;
+    margin: 100px auto 50px;
+}
+#lineBanner>div{
+    height: 300px;
+    overflow: hidden;
+}
+#lineBanner>div:first-child{
+    width: 100%;
+    background: url('../images/higashino7.jpg') no-repeat center/cover;
+}
+#lineBanner>div:last-child{
+    width: 100%;
+    background: #f3f3f3;
+    text-align: center;
+}
+#lineBanner>div:last-child h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 40px 20px 30px;
+    color: #333;
+}
+#lineBanner>div:last-child p{
+    line-height: 3.5;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+/*mdPick 공통 스타일*/
+#mdPick>div>ul>li{text-align: center;}
+#mdPick>div>ul img{width: 100%;}
+#mdPick>div>ul h4{
+    font-weight: bold; 
+    margin: 20px 0;
+    color: #333;
+}
+#mdPick>div>ul p{
+    font-size: 0.9rem; 
+    line-height: 2;
+    color: #333;
+}
+
+.pickPrd>a{
+    display: block;
+    position: relative;/*기준이 잡혀 있어야 caption 클래스를 기준 밖으로 보낸 다음에 hover 했을때 다시 불러 올 수 있음*/
+    overflow: hidden;/*이걸 해놔야 밖에 나가있는 caption 안보임*/
+    width: 100%;
+}
+.pickPrd>a img{width: 100%; vertical-align: top;}
+
+
+/*가로선 스타일*/
+hr{
+    width: 70%; height: 1px;
+    background: #333;
+    border: 0;
+    margin: 100px auto;
+}
+
+/*둥근 이미지 영역*/
+#picCircle>div>a>.circle_img{
+    background: url() no-repeat center/cover;
+}
+#picCircle>div:nth-child(1)>a>.circle_img{
+    background-image: url('../images/movie_namiya.jpg');
+}
+#picCircle>div:nth-child(2)>a>.circle_img{
+    background-image: url('../images/movie_X.jpg');
+    bottom: -50%;
+}
+#picCircle>div:nth-child(3)>a>.circle_img{
+    background-image: url('../images/movie_bang.jpg');
+}
+
+#picCircle>div>a{
+    display: block;
+    position: relative;
+    width: 100%; height: 300px;
+}
+#picCircle>div>a>div{position: absolute;}
+#picCircle>div>a>div.circle_img{
+    width: 180px; height: 180px;
+    z-index: 99;
+}
+#picCircle>div>a>div.circle_txt{
+    background: #f3f3f3;
+    padding: 20% 5% 5% 5%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#picCircle>div>a>div.circle_txt h4{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 40px 0px 20px;
+    color: #333;
+}
+#picCircle>div:nth-last-child(2)>a>div.circle_txt h4{
+    margin: 20px 0;
+}
+#picCircle>div>a>div.circle_txt p{
+    font-size: 0.9rem;
+    line-height: 2;
+    color: #666;
+}
+#picCircle>div:nth-child(2)>a>div.circle_txt{
+    padding: 5% 5% 20% 5%;
+    top: -30%;
+}
+
+/*이미지 배너 영역*/
+#imgBanner{
+    height: 900px;
+    position: relative;
+}
+#imgBanner>div:nth-child(1){
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    width: 400px; height: 500px;
+    box-shadow: 2px 2px 10px #DDD;
+    position: absolute;
+    left: 50%; top: 30%;
+    transform: translateX(-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 99;
+}
+#imgBanner>div:nth-child(1)>h4{
+    margin: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+#imgBanner>div:nth-child(1)>p{
+    line-height: 1.8;
+}
+#imgBanner>div:nth-child(2){
+    position: absolute;
+    top: 5%; left: 24%;
+}
+
+#imgBanner>div:nth-child(3){
+    position: absolute;
+    top: 18%; left: 57%;
+}
+
+/*푸터영역*/
+footer{
+    height: 100px;
+    background: #f3f3f3;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+footer>p{
+    font-size: 20px;
+}
+
+
+
+
+

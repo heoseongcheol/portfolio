@@ -1,0 +1,173 @@
+@charset "utf-8";
+@media all and (min-width:1025px) {
+	.wrap{ /*여기저기 중앙정렬로 사용할 클래스*/
+        width:75%;
+        margin:0 auto;
+    }
+    .header{/*헤더에만 적용될 스타일*/
+        width: 100%;
+        position:absolute;
+        /*
+        position 값이 fixed 인 경우 
+        gnb를 상단에 항시 고정시켜 사용 할 수 있다.
+         (스크롤이 내려가도 지정한 위치에 항시 gnb가 붙어있다)
+        */
+        top:0; left:0;
+        z-index:9999;
+    }
+    .header>nav{
+        width: 100%; 
+        margin: 0 auto;
+        background:#fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu{display:none;}
+    .header>nav,#gnb,#util{height:60px;}
+
+    /*PCver flex 셋팅*/
+    
+    #gnb,
+    #util,
+    #bestProduct>ul,
+    #snsArea>div,
+    #snsArea>div>ul,
+    #lineBanner,
+    #mdPick>div,
+    #mdPick>div>ul,
+    #picCircle{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    #gnb{display:flex !important; width: 60%;} 
+    /* mobile로 갔을때 flex 아니고 세로로 배치 해야하기 때문에 pc에서는 가로로 보이게 하려고flex에 important적용 시켜줌.. moilbe 나중에 import 되어 있기 때문에 우선순위가 밀릴 수도 있다.. 여러가지 복합적 이유로 일부러 important 키워드로 
+    최상위 우선순위를 갖게함.*/   
+    #logo>a{
+        display: block;
+        width: 180px; height: 35px;
+        background: url(../images/logo.png) no-repeat;
+    }
+    #logo>a>img{
+        width: 100%; height: 100%;
+    }
+    #gnb>li{
+        width: 20%;
+        text-align:center; 
+        position:relative;
+    }
+    #gnb>li>a{
+        display:block !important;
+        font-weight: bold;
+        position: relative;
+        box-sizing: border-box;
+        padding: 15px 5px;
+        color: #333;
+        opacity: 1 !important;
+    }
+    #gnb>li>a::after, .sub>li>a::after{
+        content:'';
+        width:0px;
+        height:2px;
+        transition:all .3s;
+    }
+    #gnb>li:hover>a::after,
+    .sub>li:hover>a::after{
+        content:'';
+        width:40%;
+        height:2px;
+        background:#f3f3f3;
+        position:absolute;
+        left:50%;
+        bottom:0px;
+        transform:translateX(-50%);
+    }
+    .sub{
+        width: 100%;
+        position:absolute;
+        background-color:rgb(203, 178, 154);
+        display:none;
+        text-align:center;
+        left: 50%; transform: translateX(-50%);
+        top: 53px;
+    }
+    .sub>li{padding-bottom: 5px;}
+    .sub>li>a{
+        display:block !important;
+        padding:15px 30px;
+        font-weight: bold;
+        position: relative;
+        color: #333;
+
+    }
+    #util{margin-left: 40px;}
+    #util>li>a{
+        width: 25px; height: 25px;
+        display: block;
+        margin: 0px 8px;
+    }
+    #util>li>a>img{width: 100%; height: 100%;}
+    
+    /*Pcver sns 영역 스타일*/
+    #snsArea{
+        padding: 100px 0 50px;
+        text-align: center;
+    }
+    #snsArea>div{justify-content: space-around; margin-top: 40px;}
+    .desc{width: 40%;}
+    #snsArea>div>ul>li{width: 160px;}
+    #snsArea>div>ul>li img{width: 80px;}
+    #snsArea>div>ul>li h3{margin: 10px 0;}
+    #snsArea>div>ul{margin-top: 40px;}
+
+    /*PCver mdPick 스타일*/
+    #mdPick>div{
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 60px;
+    }
+    #mdPick{margin: 100px auto 0px;}
+    #mdPick>div>div{
+        width: 40%;
+        border-right: 1px solid rgb(179, 179, 179);
+        padding-right: 3%;
+    }
+    #mdPick>div>ul{
+        width: 50%; height: 100%;
+    }
+    #mdPick>div>ul>li{width: 32%; overflow: hidden;}
+    #mdPick>div>ul>li img{width: 100%;}
+
+    /*둥근 이미지 영역*/
+    .picCircle_title{margin-bottom: 80px;}
+    #picCircle{
+        padding: 80px 10%;
+        justify-content: space-around;
+    }
+    #picCircle>div{width: 25%;}
+    #picCircle>div>a>div.circle_img{
+        left: 50%; top: -100px;
+        transform: translateX(-50%);
+    }
+    #picCircle>div:nth-child(2)>a>div.circle_img{
+         top: 100px;
+    }
+    #picCircle>div>a>div.circle_txt{
+        max-height: 270px;
+        text-align: center;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+}
+

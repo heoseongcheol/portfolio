@@ -1,0 +1,456 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+a,a:link,a:visited,a:hover,a:active{
+    text-decoration: none; color: #333;
+}
+html{font-size: 14px;}
+body{width: 100%;}
+img{vertical-align: top;}
+
+
+
+/* 헤더영역 */
+
+header{margin-bottom: 80px;}
+header>div{
+    height: 70px; 
+    box-sizing: border-box;
+}
+header>div>a{
+    display: block;
+    width: 200px; height: 36px;
+}
+header>div>a>img{
+    width: 100%; height: 100%;
+}
+
+.m_util{display: none;}
+
+.util{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gnb::after{
+    content:'';
+    width:0; height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+ }
+.gnb{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0px 60px;
+}
+
+.gnb>li>a{
+    font-size: 1.2rem;
+    padding: 0 20px 20px;
+    font-weight: bold;
+}
+.gnb>li>a:hover{
+    color: #2c0039;
+    border-bottom: 2px solid #2c0039;
+}
+.util>div{
+    width: 134px; height: 40px;
+    background: #2c0039;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+.util>div span{color: #fff;}
+
+.banner{
+    width: 100%; height: 480px;
+    background: url('../images/header_bg.png') no-repeat center;
+    text-align: center;
+    padding-top: 200px;
+}
+.banner>h3{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.banner>h4{
+    font-size: 1.1rem;
+    color: #fff;
+}
+.d_menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.d_menu>li>a{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding:0px 30px 16px;
+    box-sizing: border-box;
+}
+.d_menu>li>a:hover{
+    color: #2c0039;
+    border-bottom: 2px solid #2c0039;
+}
+
+/* 제품리스트 */
+.product{
+    width: 67%;
+    margin: 0 auto 120px;
+}
+.b_menu{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 40px;
+}
+.b_menu>li{
+    width: 25%; height: 40px;
+    background: #e6deda;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.b_menu>li:hover{
+    background: #36252f;
+    color: #fff;
+}
+.p_list>ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.p_list>ul>li{
+    width: 24%;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.list{position: relative;}
+.list>:nth-child(1){
+    margin: 30px 0px;
+}
+
+/*
+.list>:nth-child(1)>img{
+    width: 42%;
+}
+*/
+
+.list>:nth-child(2)>span{
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: #006db0;
+    border-radius: 5px;
+    margin:0px 5px 10px;
+}
+.hot>:nth-child(2)>span:first-child{
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: #ed2939;
+    border-radius: 5px;
+    margin:0px 5px 10px;
+}
+
+.list>:nth-child(3){
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.list>:nth-child(4){
+    display: block;
+    width: 48px; height: 48px;
+    background: #e86529;
+    border-radius: 24px;
+    position: absolute;
+    top: -20px; right: 10px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* 푸터영역 */
+footer{
+    background: #2c0039;
+}
+.f_util{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 40px 0;
+    border-bottom: 1px solid #888888;
+}
+.f_util>a{margin-left: 3%;}
+.f_util>ul{
+    display: flex;
+    justify-content: center;
+}
+.f_util>ul>li>a{
+    color: #fff;
+    margin: 0 10px;
+}
+.f_util>div{margin-right: 3%;}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+.call{margin-left: 3%;}
+.call>li{
+    color: #999; 
+    display: flex;
+    align-items: center;
+}
+.call>li:first-child{margin-bottom: 15px;}
+.call>li>span{
+    display: block;
+    font-size: 1.8rem;
+    color: #e98004;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.address{
+    width: 520px;
+}
+.address>li{
+    color: #999;
+}
+.address>li>span{
+    color: #fff;
+    margin-right: 20px;
+}
+.address>li:nth-child(2){margin: 15px 0;}
+.address>li:nth-child(3){margin-bottom: 20px;}
+.foot>div{
+    width: 110px; height: 40px;
+    background: #e86529;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+    margin-right: 3%;
+}
+.foot>div>a>span{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 테블릿(1020px) */
+
+@media all and (min-width:769px) and (max-width:1020px){
+
+    body{width: 100%;}
+
+    .util{display: none;}
+
+    .m_util{
+        width: 100%; height: 70px; 
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        background: #fff;
+    }
+    .m_util>div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+    .m_util>div>a{
+        display: block;
+        width: 200px; height: 36px;
+        margin-left: 2%;
+    }
+    .m_util>div>a>img{width: 100%; height: 100%;}
+
+    .h_btn{
+        margin-right: 2%;
+        cursor: pointer;
+    }
+    .h_btn>span{
+        display: block;
+        width: 50px; height: 8px;
+        background: #2c0039;
+    }
+    .h_btn>span:nth-of-type(2){margin: 8px 0;}
+
+    .m_menu{
+        display: none;
+        width: 100%; height: 100%;
+    }
+    .m_menu>li{
+        padding: 20px 0px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .m_menu>li>a{
+        font-size: 1.5rem;
+        color: #2c0039;
+        font-weight: bold;
+    }
+    .banner{margin-top: 70px;}
+
+    /* 제품 영역 */
+    .product{width: 97%; margin: 0 auto 100px;}
+    .b_menu{width: 100%;}
+    .b_menu>li{width: 50%;}
+    .p_list>ul{
+        width: 100%;
+    }
+    .p_list>ul>li{
+        width: 49.2%;
+    }
+
+    /* 푸터 */
+    .f_util{
+        display: block;
+        position: relative;
+        height: 160px;
+        padding: 0;
+        border: 0;
+    }
+    .f_util>a{
+        position: absolute;
+        left: 15px; top: 50px;
+        margin: 0;
+    }
+    .f_util>ul{
+        position: absolute;
+        left: 5px; top: 120px;
+    }
+    .f_util>div{
+        position: absolute;
+        right: 15px; top: 45px;
+        margin: 0;
+    }
+    .f_util>div>a{margin: 0 5px;}
+
+    .foot{display: block; padding: 15px;}
+    .call{margin: 0px 0px 20px;}
+    .address{margin-bottom: 20px;}
+    .foot>div{margin-bottom: 40px;}
+
+    
+}
+
+/* 모바일 */
+
+@media all and (max-width:768px){
+    body{width: 100%;}
+
+    .util{display: none;}
+
+    .m_util{
+        width: 100%; height: 70px; 
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        background: #fff;
+    }
+    .m_util>div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+    .m_util>div>a{
+        display: block;
+        width: 200px; height: 36px;
+        margin-left: 2%;
+    }
+    .m_util>div>a>img{width: 100%; height: 100%;}
+
+    .h_btn{
+        margin-right: 2%;
+        cursor: pointer;
+    }
+    .h_btn>span{
+        display: block;
+        width: 50px; height: 8px;
+        background: #2c0039;
+    }
+    .h_btn>span:nth-of-type(2){margin: 8px 0;}
+
+    .m_menu{
+        display: none;
+        width: 100%; height: 100%;
+    }
+    .m_menu>li{
+        padding: 20px 0px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .m_menu>li>a{
+        font-size: 1.5rem;
+        color: #2c0039;
+        font-weight: bold;
+    }
+    .banner{margin-top: 70px;}
+
+    /* 제품 영역 */
+    .product{width: 94%; margin: 0 auto 100px;}
+    .b_menu{width: 100%;}
+    .b_menu>li{width: 50%;}
+    .p_list>ul{
+        width: 100%;
+    }
+    .p_list>ul>li{
+        width: 49%;
+    }
+
+    /* 푸터 */
+    .f_util{
+        display: block;
+        position: relative;
+        height: 160px;
+        padding: 0;
+        border: 0;
+    }
+    .f_util>a{
+        position: absolute;
+        left: 15px; top: 50px;
+        margin: 0;
+    }
+    .f_util>ul{
+        position: absolute;
+        left: 5px; top: 120px;
+    }
+    .f_util>div{
+        position: absolute;
+        right: 15px; top: 45px;
+        margin: 0;
+    }
+    .f_util>div>a{margin: 0 5px;}
+
+    .foot{display: block; padding: 15px;}
+    .call{margin: 0px 0px 20px;}
+    .address{margin-bottom: 20px;}
+    .foot>div{margin-bottom: 40px;}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

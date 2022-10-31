@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<title> 비교연산자 </title>
+</head>
+<body>
+<script>
+var num1 = 7; var num2 = 2;
+var res;
+
+res = (num1 == num2);
+document.write(res); //false
+
+res = (num1 != num2);
+document.write("<br/>" + res); //true
+
+res = (num1 == "7");
+document.write("<br/>" + res); //true
+
+res = (num1 === "7");
+document.write("<br/>" + res); //false
+
+res = (num1 === 7);
+document.write("<br/>" + res); //true
+
+res = (num1 >= 10);
+document.write("<br/>" + res); //false
+
+res = ("Z" <= "C"); //문자열의 순서도 비교 가능
+document.write("<br/>" + res); //false
+
+res = ("나" <= "아"); //문자열의 순서도 비교 가능
+document.write("<br/>" + res); //false
+
+
+
+
+
+</script>
+</body>
+</html>

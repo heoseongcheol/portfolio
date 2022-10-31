@@ -1,0 +1,13 @@
+@charset "utf-8";
+table,th,td{
+	border-radius:5px;
+	padding:10px 5px;
+	text-align:center;
+}
+table{
+	width:800px;
+	margin:0 auto;
+}
+
+th{background:#ccf;}
+td{border:#cfc 1px solid;}
