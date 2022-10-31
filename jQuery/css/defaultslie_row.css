@@ -1,0 +1,21 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; list-style: none;}
+h2,p{margin: 20px 0; text-align: center;}
+
+#slide{
+    width: 600px; height: 250px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.slideWrap{width: 3000px;}
+.slideWrap li{width: 600px; height: 250px; float: left;}
+.photo{height: 250px; display: block;}
+.photo img{width: 100%;}
+.slideWrap::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
