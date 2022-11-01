@@ -559,35 +559,40 @@ footer p a span {
 }
 
 .modal-body p {
-	margin: 30px 20px;
+    font-size: 14px;
+	margin: 30px 10px;
 	color: #2D2D2D;		
+}
+.modal-body p>span{
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .modal-works {
-    width: 50%;
+    width: 55%;
     font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 500;
     color: #fff;
-    margin: 25px 5px;
+    margin: 25px 10px;
 }
 
 .modal-works span {
     display: inline-block;
 	background-color: #FED136;
     padding: 5px 10px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .modal-link {
-    width: 40%;
+    width: 45%;
     font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 500;
     color: #fff;
-    margin: 25px 5px;
+    margin: 25px 10px;
     text-align: right;
     padding-top: 4px;
 }
@@ -654,7 +659,7 @@ footer p a span {
     position: fixed;
     z-index: 1000;
     bottom: 100px;
-    right: 50px;
+    right: 30px;
 }
 #back-top a {
     width: 60px;

@@ -25,6 +25,7 @@ a:link,a:visited,a:hover,a:active{color:#333;}
     background:url() no-repeat center center/cover;
     transition:all .4s;
     opacity:0;
+    vertical-align: top;
 }
 .backimg>li:nth-child(1){background-image:url('../images/banner1.jpg');}
 .backimg>li:nth-child(2){background-image:url('../images/banner4.jpg');}
@@ -36,6 +37,9 @@ a:link,a:visited,a:hover,a:active{color:#333;}
 }
 /*헤더 공통영역*/
 .headerWrap{position:relative;}
+#gnb>li{
+    cursor: pointer;
+}
 
 /*베스트 상품 공통영역*/
 #bestProduct>h2{
@@ -304,7 +308,11 @@ footer>p{
     font-size: 20px;
 }
 
-
-
-
-
+/*
+@media screen and (min-width: 1025px) {
+    #gnb>li:hover .sub {display: block;}
+}
+@media screen and (max-width: 1024px) {
+    #gnb>li a:focus + .sub {display: block;}
+}
+*/
