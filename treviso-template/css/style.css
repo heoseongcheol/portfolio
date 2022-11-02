@@ -205,10 +205,12 @@ section {
 
 .mz-about-default {
     background-color: #252525;
+    display: none;
 }
 
 .mz-about-dark {
     background-color: #2B2B2B;
+    display: none;
 }
 
 .mz-module-about h3 {
