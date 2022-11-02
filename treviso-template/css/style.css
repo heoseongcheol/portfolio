@@ -471,7 +471,7 @@ figure.effect-bubba:hover p {
 /*--------------------
 4.7. Contacts
 --------------------*/
-
+#contact{display: none;}
 section#contact form {
     width: 60%;
     margin: 15px auto;
