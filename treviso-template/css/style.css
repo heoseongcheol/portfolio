@@ -442,7 +442,10 @@ figure.effect-bubba:hover p {
 
 .team-item {
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
 }
 .team-image{border: 1px solid #f1f1f1;}
 .team-item h3 {
@@ -458,15 +461,10 @@ figure.effect-bubba:hover p {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 500;
+    padding: 0px 0px 20px;
 }
 
-.team-item p {
-	font-size: 13px;
-	font-weight: 500;
-	color: #252525;
-	padding: 18px 30px 35px 30px;
-	line-height: 24px;
-}
+
 
 
 
