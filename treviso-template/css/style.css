@@ -191,11 +191,12 @@ section {
 
 .mz-about-container {
     padding: 0px 50px;
+    margin-bottom: 80px;
 }
 .mz-about-container p{
     font-size: 1.3em;
     font-weight: bold;
-    line-height: 2.5;
+    line-height: 2;
 }
 
 .mz-module-about {
