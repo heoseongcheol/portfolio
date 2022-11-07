@@ -86,12 +86,12 @@ section {
 --------------------*/
 
 .navbar-default {
-	background-color: #F1F1F1;
+	background: none;
 	border-color: transparent
 }
 .navbar-default .navbar-brand {
 	color: #fff;
-    padding: 5px;
+
 }
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active {
 	color: #fec503
@@ -116,12 +116,12 @@ section {
     font-weight: 400;
     letter-spacing: 2px;
     color: #000;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
     border-color: #000;
     margin: 20px 15px 0px;
     padding: 0 0 2px 0;
 }
-
+.nav>li:last-child>a{margin-right: 0;}
 .navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
 	border-color: #991919;
 	outline: 0
@@ -235,6 +235,7 @@ section {
 	margin: 40px 0;
 	font-size: 37px;
 }
+.row>div:nth-child(2){padding: 0px 50px;}
 
 /*--------------------
 4.2. Skills
