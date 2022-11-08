@@ -93,6 +93,7 @@ section {
 	color: #fff;
 
 }
+.navbar-default>div{padding-right: 0;}
 .navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,.navbar-default .navbar-brand.active {
 	color: #fec503
 }
@@ -119,7 +120,7 @@ section {
     border-bottom: 2px solid;
     border-color: #000;
     margin: 20px 15px 0px;
-    padding: 0 0 2px 0;
+    padding: 0 2px;
 }
 .nav>li:last-child>a{margin-right: 0;}
 .navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
@@ -138,6 +139,7 @@ section {
 }
 
 @media (min-width:768px) {
+    
 	.navbar-default
 	{
 		background-color: transparent;
@@ -235,7 +237,7 @@ section {
 	margin: 40px 0;
 	font-size: 37px;
 }
-.row>div:nth-child(2){padding: 0px 50px;}
+
 
 /*--------------------
 4.2. Skills
@@ -703,4 +705,8 @@ and (max-width : 480px) {
     margin-top: 7px;
     font-size: 20px;
 }
+
+}
+@media all and (max-width : 767px){
+    .navbar-default img{width: 70%;}
 }
