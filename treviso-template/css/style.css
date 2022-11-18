@@ -199,6 +199,7 @@ section {
     font-size: 1.3em;
     font-weight: bold;
     line-height: 2;
+    text-align: left;
 }
 
 .mz-module-about {
