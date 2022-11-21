@@ -719,7 +719,7 @@ and (max-width : 480px) {
     .modal-works>span, .modal-link>a{
         display: flex;
         flex-direction: column;
-        text-align: left;
+        text-align: center;
     }
     .modal-works>span{width: 150px;}
     .modal-link>a{width: 70px;}
