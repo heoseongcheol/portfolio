@@ -606,6 +606,7 @@ footer p a span {
     background-color: #fe9a36;
     padding: 5px 10px;
     color: #fff;
+    margin-bottom: 4px;
 }
 
 /*--------------------
@@ -710,4 +711,16 @@ and (max-width : 480px) {
 }
 @media all and (max-width : 767px){
     .navbar-default img{width: 70%;}
+    .modal-works>span{width: 40%;}
+    .modal-link{
+        width: 70px;
+        padding: 0;
+    }
+    .modal-works>span, .modal-link>a{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .modal-works>span{width: 150px;}
+    .modal-link>a{width: 70px;}
 }
